@@ -5,6 +5,10 @@ app.get('/', (req, res) => {
     res.send('Microservicio DevOps EP1');
 });
 
+app.get('/version', (req, res) => {
+    res.send('Version 1.0');
+});
+
 app.listen(3000, () => {
     console.log('Servidor iniciado en puerto 3000');
 });
